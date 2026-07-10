@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026 中華職棒 CPBL 觀賽指南</title>
+<style>
+  :root{
+    --bg:#0d1117;--bg2:#161b22;--bg3:#1c2230;--line:#2a313c;
+    --txt:#e6edf3;--sub:#9aa4b2;--accent:#e0203a;--accent2:#ffb703;--radius:14px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+    background:var(--bg);color:var(--txt);line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:960px;margin:0 auto;padding:0 16px}
+  header{background:linear-gradient(135deg,#1a0e12,#0d1117 55%,#0e1a12);border-bottom:1px solid var(--line);
+    padding:26px 0 18px;text-align:center;position:relative;overflow:hidden}
+  header::before{content:"⚾";position:absolute;font-size:180px;opacity:.04;top:-30px;right:-10px;transform:rotate(-15deg)}
+  .logo-badge{display:inline-flex;align-items:center;gap:10px;font-weight:900;letter-spacing:1px}
+  .logo-badge .ball{font-size:28px}
+  h1{font-size:clamp(23px,5vw,34px);font-weight:900;letter-spacing:1px;margin:6px 0 4px}
+  h1 .yr{color:var(--accent2)}
+  .season-line{color:var(--sub);font-size:13.5px;font-weight:600}
+  .update{display:inline-flex;align-items:center;gap:6px;margin-top:11px;font-size:12px;color:var(--sub);
+    background:var(--bg3);border:1px solid var(--line);padding:5px 12px;border-radius:999px}
+  .dot{width:7px;height:7px;border-radius:50%;background:#2ecc71;box-shadow:0 0 8px #2ecc71;animation:pulse 2s infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+  nav.tabs{position:sticky;top:0;z-index:20;background:rgba(13,17,23,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .tabs-inner{display:flex;gap:4px;overflow-x:auto;max-width:960px;margin:0 auto;padding:8px 12px;scrollbar-width:none}
+  .tabs-inner::-webkit-scrollbar{display:none}
+  .tab{flex:0 0 auto;padding:8px 16px;border-radius:999px;font-size:14px;font-weight:700;color:var(--sub);
+    cursor:pointer;white-space:nowrap;border:1px solid transparent;transition:.15s}
+  .tab:hover{color:var(--txt)}
+  .tab.active{background:var(--accent);color:#fff;box-shadow:0 4px 14px rgba(224,32,58,.35)}
+  section.panel{display:none;padding:22px 0 40px}
+  section.panel.active{display:block;animation:fade .25s}
+  @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  .sec-title{display:flex;align-items:center;gap:10px;font-size:18px;font-weight:800;margin:6px 0 16px}
+  .sec-title .bar{width:5px;height:20px;border-radius:3px;background:var(--accent)}
+  .sub-note{color:var(--sub);font-size:12.5px;margin:-6px 0 16px}
+  .switch{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px}
+  .switch button{background:var(--bg3);border:1px solid var(--line);color:var(--sub);padding:6px 14px;border-radius:999px;
+    font-size:13px;font-weight:700;cursor:pointer;transition:.15s}
+  .switch button.on{background:var(--txt);color:#0d1117;border-color:var(--txt)}
+  .table-card{background:var(--bg2);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  thead th{background:var(--bg3);color:var(--sub);font-weight:700;font-size:12px;padding:10px 8px;text-align:center;white-space:nowrap}
+  thead th:first-child{text-align:left;padding-left:14px}
+  tbody td{padding:12px 8px;text-align:center;border-top:1px solid var(--line);white-space:nowrap}
+  tbody td:first-child{text-align:left;padding-left:14px}
+  .team-cell{display:flex;align-items:center;gap:10px;font-weight:700}
+  .team-badge{width:30px;height:30px;border-radius:8px;display:grid;place-items:center;font-size:13px;font-weight:900;color:#fff;flex:0 0 auto}
+  .rank-num{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:6px;background:var(--bg3);font-size:12px;font-weight:800;margin-right:8px}
+  .rank-1{background:linear-gradient(135deg,#ffd700,#f5a800);color:#000}
+  .win{color:#2ecc71;font-weight:700}.lose{color:#ff6b6b;font-weight:700}.pct{font-weight:800;color:var(--accent2)}
+  .leader-list{display:grid;gap:10px}
+  .leader-row{display:flex;align-items:center;gap:14px;background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:12px 16px}
+  .lead-rank{font-size:20px;font-weight:900;width:30px;text-align:center;color:var(--sub)}
+  .lead-rank.top{color:var(--accent2)}
+  .lead-info{flex:1;min-width:0}.lead-name{font-weight:800;font-size:16px}.lead-team{font-size:12px;color:var(--sub)}
+  .lead-val{font-size:22px;font-weight:900;font-variant-numeric:tabular-nums}
+  .match-card{background:var(--bg2);border:1px solid var(--line);border-radius:var(--radius);padding:16px;margin-bottom:12px}
+  .match-top{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--sub);margin-bottom:12px}
+  .status{padding:3px 10px;border-radius:999px;font-weight:800;font-size:11px}
+  .st-scheduled{background:#1d3a5f;color:#7fb5ff}.st-live{background:#3a1d1d;color:#ff7b7b}
+  .st-final{background:#22331f;color:#8fdc7f}.st-postponed{background:#3a2f1a;color:#ffcf70}
+  .match-teams{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px}
+  .mt{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center}
+  .mt .team-badge{width:50px;height:50px;border-radius:12px;font-size:18px}
+  .mt .nm{font-weight:800;font-size:14px}
+  .mt .side{font-size:11px;color:var(--sub)}
+  .mt .starter{font-size:11px;color:var(--accent2);font-weight:700}
+  .mt .lead{font-size:11px;color:var(--sub)}
+  .vs{font-size:13px;color:var(--sub);font-weight:800}
+  .score{font-size:24px;font-weight:900;color:var(--txt);font-variant-numeric:tabular-nums}
+  .match-meta{display:flex;flex-wrap:wrap;gap:7px 16px;justify-content:center;margin-top:14px;padding-top:14px;border-top:1px solid var(--line);font-size:12.5px;color:var(--sub)}
+  .match-meta span{display:inline-flex;align-items:center;gap:5px}
+  .result-line{display:flex;flex-wrap:wrap;gap:6px 14px;justify-content:center;margin-top:8px;font-size:12px;color:var(--sub)}
+  .result-line b{color:var(--txt)}
+  .cal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+  .cal-head h3{font-size:16px;font-weight:800}
+  .cal-head button{background:var(--bg3);border:1px solid var(--line);color:var(--txt);width:34px;height:34px;border-radius:8px;cursor:pointer;font-size:16px}
+  .cal-head button:disabled{opacity:.3;cursor:default}
+  .cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}
+  .cal-grid .dow{text-align:center;font-size:11px;color:var(--sub);font-weight:700;padding:4px 0}
+  .cal-cell{aspect-ratio:1;background:var(--bg2);border:1px solid var(--line);border-radius:9px;display:flex;flex-direction:column;
+    align-items:center;justify-content:center;gap:2px;cursor:pointer;transition:.12s;position:relative}
+  .cal-cell.empty{background:transparent;border:none;cursor:default}
+  .cal-cell:not(.empty):hover{border-color:var(--accent2)}
+  .cal-cell .d{font-size:13px;font-weight:700}.cal-cell .cnt{font-size:9px;color:var(--accent2);font-weight:700}
+  .cal-cell.has::after{content:"";position:absolute;bottom:6px;width:5px;height:5px;border-radius:50%;background:var(--accent)}
+  .cal-cell.today{outline:2px solid var(--accent2);background:var(--bg3)}
+  .cal-cell.sel{background:var(--accent);color:#fff}.cal-cell.sel .cnt{color:#fff}
+  .teams-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+  .team-card{background:var(--bg2);border:1px solid var(--line);border-radius:var(--radius);padding:18px 14px;text-align:center;position:relative;overflow:hidden;transition:.15s}
+  .team-card:hover{transform:translateY(-3px)}
+  .team-card .stripe{position:absolute;top:0;left:0;right:0;height:5px}
+  .team-card .team-badge{width:56px;height:56px;border-radius:14px;font-size:20px;margin:8px auto 10px}
+  .team-card .tname{font-weight:800;font-size:15px}.team-card .thome{font-size:12px;color:var(--sub);margin-top:4px}
+  .bc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+  .bc-card{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:16px}
+  .bc-card .bn{font-weight:800;font-size:15px;display:flex;align-items:center;gap:8px}.bc-card .bd{font-size:12.5px;color:var(--sub);margin-top:6px}
+  .tag{font-size:10px;font-weight:800;padding:2px 8px;border-radius:999px}
+  .tag-free{background:#22331f;color:#8fdc7f}.tag-paid{background:#3a2f1a;color:#ffcf70}
+  footer{border-top:1px solid var(--line);padding:24px 0 40px;color:var(--sub);font-size:12.5px;text-align:center}
+  footer a{color:var(--accent2)}footer p{margin:5px 0}
+  .loading{text-align:center;padding:60px 0;color:var(--sub)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="logo-badge"><span class="ball">⚾</span><span>CPBL</span></div>
+    <h1>中華職棒 <span class="yr">2026</span> 觀賽指南</h1>
+    <div class="season-line">中華職棒大聯盟 · 6 隊 · 一軍例行賽 4–9 月</div>
+    <div class="update"><span class="dot"></span> 資料更新：<span id="updateTime">—</span></div>
+  </div>
+</header>
+<nav class="tabs"><div class="tabs-inner" id="tabs"></div></nav>
+<div class="wrap">
+  <section class="panel active" id="p-schedule">
+    <div class="sec-title"><span class="bar"></span>賽程 Schedule</div>
+    <p class="sub-note">卡片顯示 <b style="color:var(--accent2)">先發投手</b>（賽前公布）與先發首棒；已結束場次顯示比分、勝敗投與 MVP。</p>
+    <div class="cal-head"><button id="calPrev">‹</button><h3 id="calTitle"></h3><button id="calNext">›</button></div>
+    <div class="cal-grid" id="calGrid"></div>
+    <div style="text-align:center;margin:14px 0"><button class="tab active" id="todayBtn" style="display:inline-block">▶ 回到今天</button></div>
+    <div id="dayTitle" class="sec-title" style="font-size:15px;margin-top:20px"><span class="bar"></span><span></span></div>
+    <div id="matchList"></div>
+  </section>
+  <section class="panel" id="p-standings">
+    <div class="sec-title"><span class="bar"></span>球隊戰績 Standings</div>
+    <div class="switch" id="halfSwitch"></div>
+    <div class="table-card"><table>
+      <thead><tr><th>排名 / 球隊</th><th>出賽</th><th>勝-敗-和</th><th>勝率</th><th>勝差</th><th>連勝敗</th></tr></thead>
+      <tbody id="standBody"></tbody></table></div>
+    <p class="sub-note" style="margin-top:14px">＊依 CPBL 官方賽果即時計算。勝率＝勝/(勝+敗)，和局不計。勝差以第一名為基準。</p>
+  </section>
+  <section class="panel" id="p-leaders">
+    <div class="sec-title"><span class="bar"></span>數據排行 Leaders</div>
+    <div class="switch" id="catSwitch"></div><div class="switch" id="statSwitch"></div>
+    <div class="leader-list" id="leaderList"></div>
+    <p class="sub-note" style="margin-top:14px">＊打擊 5 項與投手 4 項由 <a href="https://www.cpbl.com.tw/stats/all" target="_blank" style="color:var(--accent2)">CPBL 官網</a> 即時抓取；救援成功由賽果統計。</p>
+  </section>
+  <section class="panel" id="p-teams"><div class="sec-title"><span class="bar"></span>球隊 Teams</div><div class="teams-grid" id="teamsGrid"></div></section>
+  <section class="panel" id="p-broadcast">
+    <div class="sec-title"><span class="bar"></span>轉播資訊 Broadcast</div>
+    <p class="sub-note">CPBL 一軍例行賽台灣主要轉播管道（依賽事與主場而定）。</p>
+    <div class="bc-grid" id="bcGrid"></div>
+  </section>
+</div>
+<footer><div class="wrap">
+  <p>資料來源：<a href="https://www.cpbl.com.tw/" target="_blank" rel="noopener">中華職棒官方全球資訊網 CPBL</a>（賽程 / 戰績 / 先發投手 / 先發打序）· 由 <code>fetch_cpbl.py</code> 每日自動更新</p>
+  <p>本頁為非官方觀賽整理，數據以 CPBL 官網為準。設計概念參考 2026 世足觀賽指南。</p>
+  <p style="opacity:.6">© 2026 CPBL 觀賽指南（fan-made）</p>
+</div></footer>
+
+<script>
+/* 靜態補充資料（轉播）；排行榜改由 cpbl_data.json 提供 */
+const EXTRA={
+  broadcast:[
+    {n:"緯來體育台",tag:"paid",d:"有線電視體育頻道，例行賽與季後賽轉播主力。"},
+    {n:"中華電信 CPBL TV",tag:"paid",d:"MOD／Hami Video，全場次網路直播（付費）。"},
+    {n:"DAZN 台灣",tag:"paid",d:"OTT 串流，多場例行賽與國際賽轉播。"},
+    {n:"MOMOTV",tag:"paid",d:"部分主場賽事電視轉播。"},
+    {n:"YouTube 官方精華",tag:"free",d:"CPBL 官方頻道賽後精華與新聞（免費）。"}
+  ]
+};
+
+let DATA=null, T={};
+const $=id=>document.getElementById(id);
+const badge=(c,cls="team-badge")=>{const t=T[c];return `<span class="${cls}" style="background:${t.color};color:${t.txt}">${t.badge}</span>`;};
+
+fetch("cpbl_data.json?_="+Date.now()).then(r=>r.json()).then(init).catch(err=>{
+  $("matchList").innerHTML=`<div class="loading">⚠️ 無法載入 cpbl_data.json，請先執行 <code>python fetch_cpbl.py</code> 產生資料。<br><small>${err}</small></div>`;
+});
+
+function init(d){
+  DATA=d;T=d.teams;
+  $("updateTime").textContent=d.updated;
+  buildTabs();buildStandings();buildLeaders();buildTeams();buildBroadcast();buildSchedule();
+}
+
+/* Tabs */
+function buildTabs(){
+  const TABS=[["schedule","賽程"],["standings","戰績"],["leaders","數據"],["teams","球隊"],["broadcast","轉播"]];
+  const el=$("tabs");el.innerHTML="";
+  TABS.forEach(([id,label],i)=>{
+    const b=document.createElement("div");b.className="tab"+(i===0?" active":"");b.textContent=label;
+    b.onclick=()=>{document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));b.classList.add("active");
+      document.querySelectorAll(".panel").forEach(p=>p.classList.remove("active"));$("p-"+id).classList.add("active");
+      window.scrollTo({top:0,behavior:"smooth"});};
+    el.appendChild(b);
+  });
+}
+
+/* Standings */
+let curHalf=null;
+function buildStandings(){
+  const halves=Object.keys(DATA.standings);
+  curHalf=halves.includes("下半季")?"下半季":halves[halves.length-1];
+  const sw=$("halfSwitch");sw.innerHTML="";
+  halves.forEach(h=>{const b=document.createElement("button");b.textContent=h;b.className=h===curHalf?"on":"";
+    b.onclick=()=>{curHalf=h;[...sw.children].forEach(x=>x.classList.remove("on"));b.classList.add("on");renderStand();};sw.appendChild(b);});
+  renderStand();
+}
+function renderStand(){
+  $("standBody").innerHTML=(DATA.standings[curHalf]||[]).map(r=>{
+    const t=T[r.t];const sc=r.streak.startsWith("勝")?"win":(r.streak.startsWith("敗")?"lose":"");
+    return `<tr><td><div class="team-cell"><span class="rank-num ${r.rk===1?'rank-1':''}">${r.rk}</span>${badge(r.t)}<span>${t.name}</span></div></td>
+      <td>${r.g}</td><td>${r.w}-${r.l}-${r.d}</td><td class="pct">${r.pct}</td><td>${r.gb}</td><td class="${sc}">${r.streak}</td></tr>`;
+  }).join("");
+}
+
+/* Leaders (from cpbl_data.json) */
+let curCat="batting",curStat=null;
+function buildLeaders(){
+  const cs=$("catSwitch");cs.innerHTML="";
+  [["batting","打擊"],["pitching","投手"]].forEach(([c,label],i)=>{
+    const b=document.createElement("button");b.textContent=label;b.className=i===0?"on":"";
+    b.onclick=()=>{curCat=c;[...cs.children].forEach(x=>x.classList.remove("on"));b.classList.add("on");buildStatSw();};cs.appendChild(b);});
+  buildStatSw();
+}
+function leadersOf(cat){return (DATA.leaders&&DATA.leaders[cat])||{};}
+function buildStatSw(){
+  const stats=Object.keys(leadersOf(curCat));curStat=stats[0];const ss=$("statSwitch");ss.innerHTML="";
+  stats.forEach((sname,i)=>{const b=document.createElement("button");b.textContent=sname;b.className=i===0?"on":"";
+    b.onclick=()=>{curStat=sname;[...ss.children].forEach(x=>x.classList.remove("on"));b.classList.add("on");renderLeaders();};ss.appendChild(b);});
+  renderLeaders();
+}
+function renderLeaders(){
+  const rows=leadersOf(curCat)[curStat]||[];
+  $("leaderList").innerHTML=rows.map((r,i)=>{const t=T[r[1]]||{name:r[1],color:'#333',txt:'#fff',badge:'?'};
+    return `<div class="leader-row"><div class="lead-rank ${i===0?'top':''}">${i+1}</div>${badge(r[1])}
+      <div class="lead-info"><div class="lead-name">${r[0]}</div><div class="lead-team">${t.name}</div></div>
+      <div class="lead-val">${r[2]}</div></div>`;}).join("");
+}
+
+/* Teams + Broadcast */
+function buildTeams(){
+  $("teamsGrid").innerHTML=Object.keys(T).map(c=>{const t=T[c];
+    return `<div class="team-card"><div class="stripe" style="background:${t.color}"></div>${badge(c)}
+      <div class="tname">${t.name}</div><div class="thome">🏟 ${t.home}</div></div>`;}).join("");
+}
+function buildBroadcast(){
+  $("bcGrid").innerHTML=EXTRA.broadcast.map(b=>`<div class="bc-card"><div class="bn">${b.n}
+    <span class="tag ${b.tag==='free'?'tag-free':'tag-paid'}">${b.tag==='free'?'免費':'付費'}</span></div>
+    <div class="bd">${b.d}</div></div>`).join("");
+}
+
+/* Schedule / Calendar */
+const STATUS={scheduled:["st-scheduled","未開始"],live:["st-live","進行中"],final:["st-final","已結束"],postponed:["st-postponed","延賽"]};
+let calY,calM,selDate,gamesByDate={},minMonth,maxMonth;
+function buildSchedule(){
+  gamesByDate={};DATA.games.forEach(g=>{(gamesByDate[g.date]=gamesByDate[g.date]||[]).push(g);});
+  const dates=DATA.games.map(g=>g.date).sort();
+  minMonth=dates[0].slice(0,7);maxMonth=dates[dates.length-1].slice(0,7);
+  const today=DATA.today;
+  selDate=gamesByDate[today]?today:(dates.find(d=>d>=today)||dates[dates.length-1]);
+  calY=+selDate.slice(0,4);calM=+selDate.slice(5,7)-1;
+  $("calPrev").onclick=()=>{const p=`${calY}-${String(calM).padStart(2,'0')}`;if(calM===0){calY--;calM=11;}else calM--;clampCal();renderCal();};
+  $("calNext").onclick=()=>{if(calM===11){calY++;calM=0;}else calM++;clampCal();renderCal();};
+  $("todayBtn").onclick=()=>{selDate=gamesByDate[today]?today:selDate;calY=+selDate.slice(0,4);calM=+selDate.slice(5,7)-1;renderCal();renderMatches();window.scrollTo({top:0,behavior:"smooth"});};
+  renderCal();renderMatches();
+}
+function ym(){return `${calY}-${String(calM+1).padStart(2,'0')}`;}
+function clampCal(){if(ym()<minMonth){calY=+minMonth.slice(0,4);calM=+minMonth.slice(5,7)-1;}if(ym()>maxMonth){calY=+maxMonth.slice(0,4);calM=+maxMonth.slice(5,7)-1;}}
+function renderCal(){
+  $("calTitle").textContent=`${calY} 年 ${calM+1} 月`;
+  $("calPrev").disabled=ym()<=minMonth;$("calNext").disabled=ym()>=maxMonth;
+  const grid=$("calGrid");grid.innerHTML=["日","一","二","三","四","五","六"].map(d=>`<div class="dow">${d}</div>`).join("");
+  const first=new Date(calY,calM,1).getDay(),days=new Date(calY,calM+1,0).getDate();
+  for(let i=0;i<first;i++)grid.insertAdjacentHTML("beforeend",`<div class="cal-cell empty"></div>`);
+  for(let d=1;d<=days;d++){
+    const ds=`${calY}-${String(calM+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+    const cnt=gamesByDate[ds]?gamesByDate[ds].length:0;
+    let cls="cal-cell"+(cnt?" has":"")+(ds===DATA.today?" today":"")+(ds===selDate?" sel":"");
+    grid.insertAdjacentHTML("beforeend",`<div class="${cls}" data-d="${ds}"><span class="d">${d}</span>${cnt?`<span class="cnt">${cnt}場</span>`:""}</div>`);
+  }
+  grid.querySelectorAll(".cal-cell:not(.empty)").forEach(c=>c.onclick=()=>{selDate=c.dataset.d;renderCal();renderMatches();});
+}
+function renderMatches(){
+  const dt=$("dayTitle").querySelector("span:last-child"),list=$("matchList");
+  const gs=(gamesByDate[selDate]||[]).slice().sort((a,b)=>a.no-b.no);
+  const wd=["日","一","二","三","四","五","六"][new Date(selDate).getDay()];
+  dt.textContent=`${selDate}（週${wd}）— ${gs.length} 場比賽`;
+  if(!gs.length){list.innerHTML=`<p class="sub-note">本日無一軍例行賽。</p>`;return;}
+  list.innerHTML=gs.map(g=>{
+    const [scls,slabel]=STATUS[g.status]||STATUS.scheduled;
+    const a=T[g.away],h=T[g.home];
+    const isFinal=g.status==="final";
+    const mid=isFinal?`<div class="score">${g.as ?? ''} : ${g.hs ?? ''}</div>`:`<div class="vs">VS</div>`;
+    const starter=(name,first)=>{let s="";if(name)s+=`<span class="starter">⚾ ${name}</span>`;if(first)s+=`<span class="lead">1棒 ${first}</span>`;return s;};
+    const meta=[];
+    if(g.time)meta.push(`<span>🕒 ${g.time}</span>`);
+    if(g.venue)meta.push(`<span>🏟 ${g.venue}</span>`);
+    if(g.note)meta.push(`<span>⚠️ ${g.note}</span>`);
+    let result="";
+    if(isFinal){const parts=[];
+      if(g.win)parts.push(`勝 <b>${g.win}</b>`);if(g.lose)parts.push(`敗 <b>${g.lose}</b>`);
+      if(g.save)parts.push(`救 <b>${g.save}</b>`);if(g.mvp)parts.push(`MVP <b>${g.mvp}</b>`);
+      if(parts.length)result=`<div class="result-line">${parts.map(p=>`<span>${p}</span>`).join("")}</div>`;}
+    return `<div class="match-card">
+      <div class="match-top"><span>#${g.no} 例行賽</span><span class="status ${scls}">${slabel}</span></div>
+      <div class="match-teams">
+        <div class="mt">${badge(g.away)}<span class="nm">${a.name}</span><span class="side">客</span>${starter(g.awayP,g.awayFirst)}</div>
+        ${mid}
+        <div class="mt">${badge(g.home)}<span class="nm">${h.name}</span><span class="side">主</span>${starter(g.homeP,g.homeFirst)}</div>
+      </div>
+      ${result}
+      <div class="match-meta">${meta.join("")}</div></div>`;
+  }).join("");
+}
+</script>
+</body>
+</html>
