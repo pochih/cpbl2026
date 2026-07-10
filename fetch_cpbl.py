@@ -39,7 +39,10 @@ def tcode(full):  # ACN011 -> ACN
 def new_session():
     s = requests.Session()
     s.headers.update({
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120 Safari/537.36",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                      "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "zh-TW,zh;q=0.9,en;q=0.8",
         "X-Requested-With": "XMLHttpRequest",
     })
     return s
@@ -50,17 +53,27 @@ def get_token(s, page):
     return m.group(1) if m else None
 
 def fetch_schedule(s):
-    """回傳全季賽事 list（原始 dict）。"""
-    tok = get_token(s, "/schedule")
-    r = s.post(BASE + "/schedule/getgamedatas",
-               data={"calendar": f"{YEAR}/01/01", "location": "", "kindCode": KIND},
-               headers={"RequestVerificationToken": tok, "Referer": BASE + "/schedule"},
-               timeout=40)
-    j = r.json()
-    if not j.get("Success"):
-        raise RuntimeError("schedule fetch failed")
-    gd = j["GameDatas"]
-    return json.loads(gd) if isinstance(gd, str) else gd
+    """回傳全季賽事 list（原始 dict）。含重試以因應 CI 環境偶發失敗。"""
+    last = None
+    for attempt in range(4):
+        try:
+            tok = get_token(s, "/schedule")
+            if not tok:
+                raise RuntimeError("找不到 RequestVerificationToken（頁面結構改變或被擋）")
+            r = s.post(BASE + "/schedule/getgamedatas",
+                       data={"calendar": f"{YEAR}/01/01", "location": "", "kindCode": KIND},
+                       headers={"RequestVerificationToken": tok, "Referer": BASE + "/schedule"},
+                       timeout=40)
+            j = r.json()
+            if not j.get("Success"):
+                raise RuntimeError("schedule API Success=false")
+            gd = j["GameDatas"]
+            return json.loads(gd) if isinstance(gd, str) else gd
+        except Exception as e:
+            last = e
+            print(f"  賽程抓取重試 {attempt + 1}/4：{e}", file=sys.stderr)
+            time.sleep(2 + attempt * 2)
+    raise RuntimeError(f"賽程抓取失敗：{last}")
 
 def derive_status(g, today):
     """回傳 (status, note)。status ∈ scheduled/final/postponed
