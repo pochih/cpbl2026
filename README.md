@@ -41,7 +41,7 @@ python -m http.server 8899
 
 > ⚠️ 直接以 `file://` 開啟 index.html 會因瀏覽器 CORS 限制無法載入 JSON，請務必透過 http 伺服器開啟。
 
-## 每日自動更新
+## 每日自動更新 + 自動部署
 
 需求對應：
 | 需求 | 實作 |
@@ -49,16 +49,34 @@ python -m http.server 8899
 | 抓真實賽程 4–9 月每天 | `getgamedatas` 一次取全季，篩選 4–9 月 |
 | 每日更新明日先發投手 | 排程 feed 內含 `先發投手`；排程多次執行即更新 |
 | 每日比賽前更新先發首位打序 | 對今日/明日場次補抓 `box/getlive` 的 `FirstMover` |
+| 數據排行自動抓取 | `stats/recordall` 抓打擊5項+投手3項，救援成功由賽果統計 |
 
-### 方式 A：GitHub Actions（推薦，免費雲端）
-1. 將 `cpbl/` 內容推到 GitHub repo。
-2. `.github/workflows/update.yml` 會依 cron 每天多次執行 `fetch_cpbl.py` 並自動 commit `cpbl_data.json`。
-3. 開啟 GitHub Pages（Settings → Pages → 指向 root）即可線上瀏覽。
+### 架構（重要）
+> ⚠️ **CPBL 官網會封鎖雲端機房 IP（GitHub Actions 抓不到，會回傳擋頁）**，因此
+> **資料抓取必須在可連線 CPBL 的本機（台灣網路）執行**；GitHub 端只負責網站自動部署。
 
-### 方式 B：Windows 工作排程器（本機）
+```
+本機（台灣網路）                         GitHub
+┌─────────────────────┐   git push   ┌────────────────────┐
+│ 工作排程器每日執行     │ ───────────▶ │ main 分支更新        │
+│ run_daily.bat         │              │  ↓ 自動觸發          │
+│  → fetch_cpbl.py      │              │ GitHub Pages 重新部署 │
+│  → 產生 cpbl_data.json │              │  → 網站即時更新       │
+│  → git commit & push  │              └────────────────────┘
+└─────────────────────┘
+```
+
+### 設定 Windows 工作排程器（本機自動更新）
 1. 開「工作排程器」→ 建立基本工作。
-2. 觸發程序：每天（可設多個時間，如 08:00 / 17:00）。
-3. 動作：啟動程式 → 選擇 `run_daily.bat`。
+2. 觸發程序：每天，可加多個時間（如 08:00 / 12:00 / 17:00 / 21:00 —
+   先發投手常於賽前一日公布、先發打序賽前約 1 小時公布）。
+3. 動作：啟動程式 → 選擇本資料夾的 `run_daily.bat`。
+4. 之後每次執行都會自動抓取最新資料並 push，GitHub Pages 會自動重新部署。
+
+> 首次 push 需已設定好 git 認證（本機已用 `gh auth login` 或 git 憑證管理員登入）。
+
+### 線上網址
+GitHub Pages：<https://pochih.github.io/cpbl2026/>（push 後約 1 分鐘更新）
 
 ## 資料來源
 
