@@ -1,6 +1,6 @@
 {
- "updated": "2026-07-11 21:29",
- "today": "2026-07-11",
+ "updated": "2026-07-12 10:35",
+ "today": "2026-07-12",
  "teams": {
   "ACN": {
    "name": "中信兄弟",
@@ -4077,10 +4077,8 @@
    "lose": "",
    "save": "",
    "mvp": "",
-   "status": "scheduled",
-   "note": "",
-   "awayFirst": "",
-   "homeFirst": ""
+   "status": "postponed",
+   "note": ""
   },
   {
    "date": "2026-07-11",
@@ -4098,10 +4096,8 @@
    "lose": "",
    "save": "",
    "mvp": "",
-   "status": "scheduled",
-   "note": "",
-   "awayFirst": "",
-   "homeFirst": ""
+   "status": "postponed",
+   "note": ""
   },
   {
    "date": "2026-07-11",
@@ -4119,10 +4115,8 @@
    "lose": "",
    "save": "",
    "mvp": "",
-   "status": "scheduled",
-   "note": "",
-   "awayFirst": "",
-   "homeFirst": ""
+   "status": "postponed",
+   "note": ""
   },
   {
    "date": "2026-07-12",
