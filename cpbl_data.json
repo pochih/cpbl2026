@@ -1,6 +1,6 @@
 {
- "updated": "2026-07-14 23:58",
- "today": "2026-07-14",
+ "updated": "2026-07-15 12:00",
+ "today": "2026-07-15",
  "teams": {
   "ACN": {
    "name": "中信兄弟",
@@ -4192,9 +4192,7 @@
    "save": "林凱威",
    "mvp": "蔣銲",
    "status": "final",
-   "note": "",
-   "awayFirst": "",
-   "homeFirst": ""
+   "note": ""
   },
   {
    "date": "2026-07-14",
@@ -4213,9 +4211,7 @@
    "save": "曾峻岳",
    "mvp": "鈴木駿輔",
    "status": "final",
-   "note": "",
-   "awayFirst": "",
-   "homeFirst": ""
+   "note": ""
   },
   {
    "date": "2026-07-15",
@@ -4297,7 +4293,9 @@
    "save": "",
    "mvp": "",
    "status": "scheduled",
-   "note": ""
+   "note": "",
+   "awayFirst": "",
+   "homeFirst": ""
   },
   {
    "date": "2026-07-21",
