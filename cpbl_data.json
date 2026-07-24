@@ -1,6 +1,6 @@
 {
- "updated": "2026-07-23 23:00",
- "today": "2026-07-23",
+ "updated": "2026-07-24 10:41",
+ "today": "2026-07-24",
  "teams": {
   "ACN": {
    "name": "中信兄弟",
@@ -4401,9 +4401,7 @@
    "save": "",
    "mvp": "陳仕朋",
    "status": "final",
-   "note": "",
-   "awayFirst": "",
-   "homeFirst": ""
+   "note": ""
   },
   {
    "date": "2026-07-24",
@@ -4485,7 +4483,9 @@
    "save": "",
    "mvp": "",
    "status": "scheduled",
-   "note": ""
+   "note": "",
+   "awayFirst": "",
+   "homeFirst": ""
   },
   {
    "date": "2026-07-25",
@@ -4504,7 +4504,9 @@
    "save": "",
    "mvp": "",
    "status": "scheduled",
-   "note": ""
+   "note": "",
+   "awayFirst": "",
+   "homeFirst": ""
   },
   {
    "date": "2026-07-25",
@@ -4523,7 +4525,9 @@
    "save": "",
    "mvp": "",
    "status": "scheduled",
-   "note": ""
+   "note": "",
+   "awayFirst": "",
+   "homeFirst": ""
   },
   {
    "date": "2026-07-26",
