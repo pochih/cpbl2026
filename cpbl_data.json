@@ -1,6 +1,6 @@
 {
- "updated": "2026-07-28 21:46",
- "today": "2026-07-28",
+ "updated": "2026-07-29 10:13",
+ "today": "2026-07-29",
  "teams": {
   "ACN": {
    "name": "中信兄弟",
@@ -4591,9 +4591,7 @@
    "save": "",
    "mvp": "蔣銲",
    "status": "final",
-   "note": "",
-   "awayFirst": "",
-   "homeFirst": ""
+   "note": ""
   },
   {
    "date": "2026-07-28",
@@ -4612,9 +4610,7 @@
    "save": "鍾允華",
    "mvp": "陳傑憲",
    "status": "final",
-   "note": "",
-   "awayFirst": "",
-   "homeFirst": ""
+   "note": ""
   },
   {
    "date": "2026-07-29",
@@ -4696,7 +4692,9 @@
    "save": "",
    "mvp": "",
    "status": "scheduled",
-   "note": ""
+   "note": "",
+   "awayFirst": "",
+   "homeFirst": ""
   },
   {
    "date": "2026-07-31",
@@ -7342,7 +7340,7 @@
     [
      "張育成",
      "AEO",
-     "0.303"
+     "0.299"
     ],
     [
      "陳文杰",
