@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-06 12:00",
- "today": "2026-08-06",
+ "updated": "2026-08-07 00:02",
+ "today": "2026-08-07",
  "teams": {
   "ACN": {
    "name": "中信兄弟",
@@ -4962,18 +4962,16 @@
    "home": "AAA",
    "venue": "天母",
    "time": "18:35",
-   "as": 0,
-   "hs": 0,
-   "awayP": "",
-   "homeP": "",
-   "win": "",
-   "lose": "",
+   "as": 8,
+   "hs": 2,
+   "awayP": "喬登",
+   "homeP": "郭郁政",
+   "win": "喬登",
+   "lose": "郭郁政",
    "save": "",
-   "mvp": "",
-   "status": "scheduled",
-   "note": "",
-   "awayFirst": "",
-   "homeFirst": ""
+   "mvp": "陳傑憲",
+   "status": "final",
+   "note": ""
   },
   {
    "date": "2026-08-07",
@@ -5055,7 +5053,9 @@
    "save": "",
    "mvp": "",
    "status": "scheduled",
-   "note": ""
+   "note": "",
+   "awayFirst": "",
+   "homeFirst": ""
   },
   {
    "date": "2026-08-08",
@@ -5074,7 +5074,9 @@
    "save": "",
    "mvp": "",
    "status": "scheduled",
-   "note": ""
+   "note": "",
+   "awayFirst": "",
+   "homeFirst": ""
   },
   {
    "date": "2026-08-08",
@@ -5093,7 +5095,9 @@
    "save": "",
    "mvp": "",
    "status": "scheduled",
-   "note": ""
+   "note": "",
+   "awayFirst": "",
+   "homeFirst": ""
   },
   {
    "date": "2026-08-09",
@@ -7269,14 +7273,14 @@
    },
    {
     "t": "AAA",
-    "g": 20,
+    "g": 21,
     "w": 12,
-    "l": 8,
+    "l": 9,
     "d": 0,
-    "pct": ".600",
-    "streak": "勝1",
+    "pct": ".571",
+    "streak": "敗1",
     "rk": 2,
-    "gb": "0"
+    "gb": "0.5"
    },
    {
     "t": "AKP",
@@ -7291,14 +7295,14 @@
    },
    {
     "t": "ADD",
-    "g": 20,
-    "w": 9,
+    "g": 21,
+    "w": 10,
     "l": 11,
     "d": 0,
-    "pct": ".450",
-    "streak": "敗1",
+    "pct": ".476",
+    "streak": "勝1",
     "rk": 4,
-    "gb": "3"
+    "gb": "2.5"
    },
    {
     "t": "ACN",
@@ -7453,7 +7457,7 @@
     [
      "李凱威",
      "AAA",
-     "13"
+     "14"
     ],
     [
      "張仁瑋",
