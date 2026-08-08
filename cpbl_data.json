@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-08 12:06",
+ "updated": "2026-08-08 17:00",
  "today": "2026-08-08",
  "teams": {
   "ACN": {
@@ -5039,7 +5039,7 @@
    "venue": "澄清湖",
    "time": "16:05",
    "as": 0,
-   "hs": 0,
+   "hs": 1,
    "awayP": "",
    "homeP": "",
    "win": "",
@@ -5047,9 +5047,7 @@
    "save": "",
    "mvp": "",
    "status": "scheduled",
-   "note": "",
-   "awayFirst": "",
-   "homeFirst": ""
+   "note": ""
   },
   {
    "date": "2026-08-08",
