@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-20 22:25",
- "today": "2026-08-20",
+ "updated": "2026-08-21 10:19",
+ "today": "2026-08-21",
  "teams": {
   "ACN": {
    "name": "中信兄弟",
@@ -5541,9 +5541,7 @@
    "save": "李振昌",
    "mvp": "德保拉",
    "status": "final",
-   "note": "",
-   "awayFirst": "",
-   "homeFirst": ""
+   "note": ""
   },
   {
    "date": "2026-08-21",
@@ -5625,7 +5623,9 @@
    "save": "",
    "mvp": "",
    "status": "scheduled",
-   "note": ""
+   "note": "",
+   "awayFirst": "",
+   "homeFirst": ""
   },
   {
    "date": "2026-08-22",
@@ -5644,7 +5644,9 @@
    "save": "",
    "mvp": "",
    "status": "scheduled",
-   "note": ""
+   "note": "",
+   "awayFirst": "",
+   "homeFirst": ""
   },
   {
    "date": "2026-08-22",
@@ -5663,7 +5665,9 @@
    "save": "",
    "mvp": "",
    "status": "scheduled",
-   "note": ""
+   "note": "",
+   "awayFirst": "",
+   "homeFirst": ""
   },
   {
    "date": "2026-08-23",
