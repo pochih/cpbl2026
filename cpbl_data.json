@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-26 03:19",
+ "updated": "2026-08-26 17:06",
  "today": "2026-08-26",
  "teams": {
   "ACN": {
@@ -6926,6 +6926,25 @@
    "away": "AKP",
    "home": "AJL",
    "venue": "樂天桃園",
+   "time": "18:35",
+   "as": 0,
+   "hs": 0,
+   "awayP": "",
+   "homeP": "",
+   "win": "",
+   "lose": "",
+   "save": "",
+   "mvp": "",
+   "status": "scheduled",
+   "note": ""
+  },
+  {
+   "date": "2026-09-22",
+   "no": 287,
+   "season": "2",
+   "away": "AAA",
+   "home": "ADD",
+   "venue": "亞太主",
    "time": "18:35",
    "as": 0,
    "hs": 0,
