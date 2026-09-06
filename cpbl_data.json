@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-05 23:16",
- "today": "2026-09-05",
+ "updated": "2026-09-06 08:00",
+ "today": "2026-09-06",
  "teams": {
   "ACN": {
    "name": "中信兄弟",
@@ -6187,9 +6187,7 @@
    "save": "鍾允華",
    "mvp": "林培緯",
    "status": "final",
-   "note": "",
-   "awayFirst": "",
-   "homeFirst": ""
+   "note": ""
   },
   {
    "date": "2026-09-05",
@@ -6208,9 +6206,7 @@
    "save": "",
    "mvp": "陳克羿",
    "status": "final",
-   "note": "",
-   "awayFirst": "",
-   "homeFirst": ""
+   "note": ""
   },
   {
    "date": "2026-09-05",
@@ -6229,9 +6225,7 @@
    "save": "",
    "mvp": "勝騎士",
    "status": "final",
-   "note": "",
-   "awayFirst": "",
-   "homeFirst": ""
+   "note": ""
   },
   {
    "date": "2026-09-06",
@@ -6313,7 +6307,9 @@
    "save": "",
    "mvp": "",
    "status": "scheduled",
-   "note": ""
+   "note": "",
+   "awayFirst": "",
+   "homeFirst": ""
   },
   {
    "date": "2026-09-07",
@@ -6332,7 +6328,9 @@
    "save": "",
    "mvp": "",
    "status": "scheduled",
-   "note": ""
+   "note": "",
+   "awayFirst": "",
+   "homeFirst": ""
   },
   {
    "date": "2026-09-08",
