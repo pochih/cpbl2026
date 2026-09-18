@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-11 12:00",
- "today": "2026-09-11",
+ "updated": "2026-09-18 22:01",
+ "today": "2026-09-18",
  "teams": {
   "ACN": {
    "name": "中信兄弟",
@@ -6444,18 +6444,16 @@
    "home": "AAA",
    "venue": "天母",
    "time": "18:35",
-   "as": 0,
-   "hs": 0,
-   "awayP": "",
-   "homeP": "",
-   "win": "",
-   "lose": "",
-   "save": "",
-   "mvp": "",
-   "status": "scheduled",
-   "note": "",
-   "awayFirst": "",
-   "homeFirst": ""
+   "as": 3,
+   "hs": 2,
+   "awayP": "江少慶",
+   "homeP": "魔神龍",
+   "win": "邱浩鈞",
+   "lose": "魔神龍",
+   "save": "鍾允華",
+   "mvp": "江少慶",
+   "status": "final",
+   "note": ""
   },
   {
    "date": "2026-09-11",
@@ -6465,18 +6463,16 @@
    "home": "AJL",
    "venue": "樂天桃園",
    "time": "18:35",
-   "as": 0,
-   "hs": 0,
-   "awayP": "",
-   "homeP": "",
-   "win": "",
-   "lose": "",
-   "save": "",
-   "mvp": "",
-   "status": "scheduled",
-   "note": "",
-   "awayFirst": "",
-   "homeFirst": ""
+   "as": 3,
+   "hs": 5,
+   "awayP": "勝騎士",
+   "homeP": "艾菩樂",
+   "win": "舒治浩",
+   "lose": "江忠城",
+   "save": "陳冠宇",
+   "mvp": "威克",
+   "status": "final",
+   "note": ""
   },
   {
    "date": "2026-09-11",
@@ -6486,18 +6482,16 @@
    "home": "AKP",
    "venue": "嘉義市",
    "time": "18:35",
-   "as": 0,
-   "hs": 0,
-   "awayP": "",
-   "homeP": "",
-   "win": "",
-   "lose": "",
-   "save": "",
-   "mvp": "",
-   "status": "scheduled",
-   "note": "",
-   "awayFirst": "",
-   "homeFirst": ""
+   "as": 1,
+   "hs": 4,
+   "awayP": "江國豪",
+   "homeP": "坎南",
+   "win": "坎南",
+   "lose": "江國豪",
+   "save": "張誠恩",
+   "mvp": "坎南",
+   "status": "final",
+   "note": ""
   },
   {
    "date": "2026-09-12",
@@ -6507,18 +6501,16 @@
    "home": "AKP",
    "venue": "澄清湖",
    "time": "16:05",
-   "as": 0,
-   "hs": 0,
-   "awayP": "",
-   "homeP": "",
-   "win": "",
-   "lose": "",
+   "as": 3,
+   "hs": 8,
+   "awayP": "悍里歐",
+   "homeP": "威鳳山",
+   "win": "威鳳山",
+   "lose": "悍里歐",
    "save": "",
-   "mvp": "",
-   "status": "scheduled",
-   "note": "",
-   "awayFirst": "",
-   "homeFirst": ""
+   "mvp": "湯家豪",
+   "status": "final",
+   "note": ""
   },
   {
    "date": "2026-09-12",
@@ -6527,7 +6519,7 @@
    "away": "ADD",
    "home": "AAA",
    "venue": "天母",
-   "time": "17:05",
+   "time": "00:00",
    "as": 0,
    "hs": 0,
    "awayP": "",
@@ -6536,10 +6528,8 @@
    "lose": "",
    "save": "",
    "mvp": "",
-   "status": "scheduled",
-   "note": "",
-   "awayFirst": "",
-   "homeFirst": ""
+   "status": "postponed",
+   "note": "延賽 → 2026/10/01 補賽"
   },
   {
    "date": "2026-09-12",
@@ -6549,18 +6539,16 @@
    "home": "AJL",
    "venue": "樂天桃園",
    "time": "17:05",
-   "as": 0,
+   "as": 6,
    "hs": 0,
-   "awayP": "",
-   "homeP": "",
-   "win": "",
-   "lose": "",
+   "awayP": "鄭浩均",
+   "homeP": "陳克羿",
+   "win": "鄭浩均",
+   "lose": "陳克羿",
    "save": "",
-   "mvp": "",
-   "status": "scheduled",
-   "note": "",
-   "awayFirst": "",
-   "homeFirst": ""
+   "mvp": "鄭浩均",
+   "status": "final",
+   "note": ""
   },
   {
    "date": "2026-09-13",
@@ -6570,15 +6558,15 @@
    "home": "AKP",
    "venue": "澄清湖",
    "time": "16:05",
-   "as": 0,
-   "hs": 0,
-   "awayP": "",
-   "homeP": "",
-   "win": "",
-   "lose": "",
+   "as": 3,
+   "hs": 9,
+   "awayP": "李東洺",
+   "homeP": "黃子鵬",
+   "win": "黃子鵬",
+   "lose": "李東洺",
    "save": "",
-   "mvp": "",
-   "status": "scheduled",
+   "mvp": "黃子鵬",
+   "status": "final",
    "note": ""
   },
   {
@@ -6589,15 +6577,15 @@
    "home": "AAA",
    "venue": "天母",
    "time": "16:05",
-   "as": 0,
-   "hs": 0,
-   "awayP": "",
-   "homeP": "",
-   "win": "",
-   "lose": "",
+   "as": 12,
+   "hs": 1,
+   "awayP": "喬登",
+   "homeP": "梅賽鍶",
+   "win": "喬登",
+   "lose": "梅賽鍶",
    "save": "",
-   "mvp": "",
-   "status": "scheduled",
+   "mvp": "喬登",
+   "status": "final",
    "note": ""
   },
   {
@@ -6608,15 +6596,15 @@
    "home": "AJL",
    "venue": "樂天桃園",
    "time": "17:05",
-   "as": 0,
-   "hs": 0,
-   "awayP": "",
-   "homeP": "",
-   "win": "",
-   "lose": "",
+   "as": 9,
+   "hs": 3,
+   "awayP": "德保拉",
+   "homeP": "林子崴",
+   "win": "德保拉",
+   "lose": "林子崴",
    "save": "",
-   "mvp": "",
-   "status": "scheduled",
+   "mvp": "高宇杰",
+   "status": "final",
    "note": ""
   },
   {
@@ -6627,15 +6615,15 @@
    "home": "AKP",
    "venue": "澄清湖",
    "time": "18:35",
-   "as": 0,
-   "hs": 0,
-   "awayP": "",
-   "homeP": "",
-   "win": "",
-   "lose": "",
-   "save": "",
-   "mvp": "",
-   "status": "scheduled",
+   "as": 2,
+   "hs": 1,
+   "awayP": "邱駿威",
+   "homeP": "江承諺",
+   "win": "邱駿威",
+   "lose": "陳柏清",
+   "save": "陳冠宇",
+   "mvp": "邱駿威",
+   "status": "final",
    "note": ""
   },
   {
@@ -6646,15 +6634,15 @@
    "home": "AEO",
    "venue": "新莊",
    "time": "18:35",
-   "as": 0,
+   "as": 3,
    "hs": 0,
-   "awayP": "",
-   "homeP": "",
-   "win": "",
-   "lose": "",
-   "save": "",
-   "mvp": "",
-   "status": "scheduled",
+   "awayP": "黃暐傑",
+   "homeP": "魔力藍",
+   "win": "黃暐傑",
+   "lose": "魔力藍",
+   "save": "林凱威",
+   "mvp": "張政禹",
+   "status": "final",
    "note": ""
   },
   {
@@ -6665,15 +6653,15 @@
    "home": "AKP",
    "venue": "澄清湖",
    "time": "18:35",
-   "as": 0,
-   "hs": 0,
-   "awayP": "",
-   "homeP": "",
-   "win": "",
-   "lose": "",
+   "as": 5,
+   "hs": 1,
+   "awayP": "羅戈",
+   "homeP": "艾速特",
+   "win": "羅戈",
+   "lose": "艾速特",
    "save": "",
-   "mvp": "",
-   "status": "scheduled",
+   "mvp": "羅戈",
+   "status": "final",
    "note": ""
   },
   {
@@ -6684,15 +6672,15 @@
    "home": "ADD",
    "venue": "嘉義市",
    "time": "18:35",
-   "as": 0,
-   "hs": 0,
-   "awayP": "",
-   "homeP": "",
-   "win": "",
-   "lose": "",
-   "save": "",
-   "mvp": "",
-   "status": "scheduled",
+   "as": 5,
+   "hs": 2,
+   "awayP": "曾家輝",
+   "homeP": "郭俊麟",
+   "win": "曾家輝",
+   "lose": "郭俊麟",
+   "save": "陳冠宇",
+   "mvp": "曾家輝",
+   "status": "final",
    "note": ""
   },
   {
@@ -6703,15 +6691,15 @@
    "home": "AAA",
    "venue": "天母",
    "time": "18:35",
-   "as": 0,
+   "as": 6,
    "hs": 0,
-   "awayP": "",
-   "homeP": "",
-   "win": "",
-   "lose": "",
+   "awayP": "瑪帝斯",
+   "homeP": "伍鐸",
+   "win": "瑪帝斯",
+   "lose": "伍鐸",
    "save": "",
-   "mvp": "",
-   "status": "scheduled",
+   "mvp": "林岱安",
+   "status": "final",
    "note": ""
   },
   {
@@ -6722,15 +6710,15 @@
    "home": "ACN",
    "venue": "大巨蛋",
    "time": "18:35",
-   "as": 0,
-   "hs": 0,
-   "awayP": "",
-   "homeP": "",
-   "win": "",
-   "lose": "",
-   "save": "",
-   "mvp": "",
-   "status": "scheduled",
+   "as": 2,
+   "hs": 4,
+   "awayP": "林詔恩",
+   "homeP": "伍立辰",
+   "win": "伍立辰",
+   "lose": "王鏡銘",
+   "save": "呂彥青",
+   "mvp": "伍立辰",
+   "status": "final",
    "note": ""
   },
   {
@@ -6742,14 +6730,14 @@
    "venue": "新莊",
    "time": "18:35",
    "as": 0,
-   "hs": 0,
-   "awayP": "",
-   "homeP": "",
-   "win": "",
-   "lose": "",
-   "save": "",
-   "mvp": "",
-   "status": "scheduled",
+   "hs": 1,
+   "awayP": "威能帝",
+   "homeP": "江國豪",
+   "win": "江國豪",
+   "lose": "威能帝",
+   "save": "張奕",
+   "mvp": "江國豪",
+   "status": "final",
    "note": ""
   },
   {
@@ -6760,15 +6748,15 @@
    "home": "AAA",
    "venue": "天母",
    "time": "18:35",
-   "as": 0,
-   "hs": 0,
-   "awayP": "",
-   "homeP": "",
-   "win": "",
-   "lose": "",
+   "as": 6,
+   "hs": 1,
+   "awayP": "威鳳山",
+   "homeP": "魔神龍",
+   "win": "威鳳山",
+   "lose": "魔神龍",
    "save": "",
-   "mvp": "",
-   "status": "scheduled",
+   "mvp": "威鳳山",
+   "status": "final",
    "note": ""
   },
   {
@@ -6779,16 +6767,18 @@
    "home": "ACN",
    "venue": "大巨蛋",
    "time": "18:35",
-   "as": 0,
-   "hs": 0,
-   "awayP": "",
-   "homeP": "",
-   "win": "",
-   "lose": "",
+   "as": 4,
+   "hs": 5,
+   "awayP": "獅帝芬",
+   "homeP": "勝騎士",
+   "win": "呂彥青",
+   "lose": "邱浩鈞",
    "save": "",
-   "mvp": "",
-   "status": "scheduled",
-   "note": ""
+   "mvp": "張士綸",
+   "status": "final",
+   "note": "",
+   "awayFirst": "",
+   "homeFirst": ""
   },
   {
    "date": "2026-09-18",
@@ -6798,16 +6788,18 @@
    "home": "AEO",
    "venue": "新莊",
    "time": "18:35",
-   "as": 0,
-   "hs": 0,
-   "awayP": "",
-   "homeP": "",
-   "win": "",
-   "lose": "",
+   "as": 1,
+   "hs": 2,
+   "awayP": "艾菩樂",
+   "homeP": "悍里歐",
+   "win": "張奕",
+   "lose": "艾菩樂",
    "save": "",
-   "mvp": "",
-   "status": "scheduled",
-   "note": ""
+   "mvp": "范國宸",
+   "status": "final",
+   "note": "",
+   "awayFirst": "",
+   "homeFirst": ""
   },
   {
    "date": "2026-09-18",
@@ -6817,16 +6809,18 @@
    "home": "AAA",
    "venue": "天母",
    "time": "18:35",
-   "as": 0,
-   "hs": 0,
-   "awayP": "",
-   "homeP": "",
-   "win": "",
-   "lose": "",
-   "save": "",
-   "mvp": "",
-   "status": "scheduled",
-   "note": ""
+   "as": 2,
+   "hs": 3,
+   "awayP": "陳正毅",
+   "homeP": "蔣銲",
+   "win": "蔣銲",
+   "lose": "陳柏清",
+   "save": "林凱威",
+   "mvp": "曾聖安",
+   "status": "final",
+   "note": "",
+   "awayFirst": "",
+   "homeFirst": ""
   },
   {
    "date": "2026-09-19",
@@ -6845,7 +6839,9 @@
    "save": "",
    "mvp": "",
    "status": "scheduled",
-   "note": ""
+   "note": "",
+   "awayFirst": "",
+   "homeFirst": ""
   },
   {
    "date": "2026-09-19",
@@ -6864,7 +6860,9 @@
    "save": "",
    "mvp": "",
    "status": "scheduled",
-   "note": ""
+   "note": "",
+   "awayFirst": "",
+   "homeFirst": ""
   },
   {
    "date": "2026-09-19",
@@ -6883,7 +6881,9 @@
    "save": "",
    "mvp": "",
    "status": "scheduled",
-   "note": ""
+   "note": "",
+   "awayFirst": "",
+   "homeFirst": ""
   },
   {
    "date": "2026-09-20",
@@ -7283,6 +7283,63 @@
    "mvp": "",
    "status": "scheduled",
    "note": ""
+  },
+  {
+   "date": "2026-09-30",
+   "no": 254,
+   "season": "2",
+   "away": "AAA",
+   "home": "AJL",
+   "venue": "樂天桃園",
+   "time": "18:35",
+   "as": 0,
+   "hs": 0,
+   "awayP": "",
+   "homeP": "",
+   "win": "",
+   "lose": "",
+   "save": "",
+   "mvp": "",
+   "status": "scheduled",
+   "note": ""
+  },
+  {
+   "date": "2026-09-30",
+   "no": 255,
+   "season": "2",
+   "away": "ADD",
+   "home": "AEO",
+   "venue": "新莊",
+   "time": "18:35",
+   "as": 0,
+   "hs": 0,
+   "awayP": "",
+   "homeP": "",
+   "win": "",
+   "lose": "",
+   "save": "",
+   "mvp": "",
+   "status": "scheduled",
+   "note": ""
+  },
+  {
+   "date": "2026-09-30",
+   "no": 302,
+   "season": "2",
+   "away": "ACN",
+   "home": "AKP",
+   "venue": "澄清湖",
+   "time": "18:35",
+   "as": 0,
+   "hs": 0,
+   "awayP": "",
+   "homeP": "",
+   "win": "",
+   "lose": "",
+   "save": "",
+   "mvp": "",
+   "status": "scheduled",
+   "note": ""
   }
  ],
  "standings": {
@@ -7356,70 +7413,70 @@
   ],
   "下半季": [
    {
-    "t": "AJL",
-    "g": 39,
-    "w": 22,
-    "l": 17,
+    "t": "ACN",
+    "g": 49,
+    "w": 28,
+    "l": 21,
     "d": 0,
-    "pct": ".564",
-    "streak": "勝2",
+    "pct": ".571",
+    "streak": "勝5",
     "rk": 1,
     "gb": "-"
    },
    {
-    "t": "ACN",
-    "g": 43,
-    "w": 23,
-    "l": 20,
+    "t": "AJL",
+    "g": 46,
+    "w": 25,
+    "l": 21,
     "d": 0,
-    "pct": ".535",
-    "streak": "敗1",
+    "pct": ".543",
+    "streak": "敗2",
     "rk": 2,
-    "gb": "1"
+    "gb": "1.5"
    },
    {
     "t": "ADD",
-    "g": 43,
-    "w": 23,
-    "l": 20,
+    "g": 48,
+    "w": 25,
+    "l": 23,
     "d": 0,
-    "pct": ".535",
-    "streak": "勝1",
+    "pct": ".521",
+    "streak": "敗3",
     "rk": 3,
-    "gb": "1"
+    "gb": "2.5"
    },
    {
     "t": "AAA",
-    "g": 41,
-    "w": 21,
-    "l": 20,
+    "g": 47,
+    "w": 23,
+    "l": 24,
     "d": 0,
-    "pct": ".512",
-    "streak": "敗2",
+    "pct": ".489",
+    "streak": "勝1",
     "rk": 4,
-    "gb": "2"
+    "gb": "4"
    },
    {
     "t": "AEO",
-    "g": 40,
-    "w": 18,
-    "l": 22,
+    "g": 47,
+    "w": 21,
+    "l": 26,
     "d": 0,
-    "pct": ".450",
-    "streak": "勝2",
+    "pct": ".447",
+    "streak": "勝3",
     "rk": 5,
-    "gb": "4.5"
+    "gb": "6"
    },
    {
     "t": "AKP",
-    "g": 40,
-    "w": 16,
-    "l": 24,
+    "g": 47,
+    "w": 20,
+    "l": 27,
     "d": 0,
-    "pct": ".400",
-    "streak": "敗7",
+    "pct": ".426",
+    "streak": "敗1",
     "rk": 6,
-    "gb": "6.5"
+    "gb": "7"
    }
   ]
  },
@@ -7432,35 +7489,35 @@
      "0.320"
     ],
     [
-     "陳傑憲",
-     "ADD",
-     "0.309"
-    ],
-    [
      "潘傑楷",
      "ADD",
-     "0.303"
+     "0.307"
+    ],
+    [
+     "陳傑憲",
+     "ADD",
+     "0.307"
     ],
     [
      "張仁瑋",
      "ACN",
-     "0.299"
-    ],
-    [
-     "張育成",
-     "AEO",
-     "0.290"
-    ]
-   ],
-   "全壘打": [
-    [
-     "張育成",
-     "AEO",
-     "15"
+     "0.295"
     ],
     [
      "魔鷹",
      "AKP",
+     "0.292"
+    ]
+   ],
+   "全壘打": [
+    [
+     "魔鷹",
+     "AKP",
+     "16"
+    ],
+    [
+     "張育成",
+     "AEO",
      "15"
     ],
     [
@@ -7469,75 +7526,75 @@
      "12"
     ],
     [
-     "郭天信",
-     "AAA",
-     "9"
-    ],
-    [
      "陳晨威",
      "AJL",
      "6"
+    ],
+    [
+     "陳傑憲",
+     "ADD",
+     "5"
     ]
    ],
    "打點": [
     [
      "魔鷹",
      "AKP",
-     "76"
+     "80"
     ],
     [
      "范國宸",
      "AEO",
-     "52"
+     "56"
     ],
     [
      "張育成",
      "AEO",
+     "46"
+    ],
+    [
+     "張仁瑋",
+     "ACN",
      "45"
     ],
     [
      "吳念庭",
      "AKP",
-     "43"
-    ],
-    [
-     "張仁瑋",
-     "ACN",
-     "42"
+     "45"
     ]
    ],
    "安打": [
     [
+     "魔鷹",
+     "AKP",
+     "112"
+    ],
+    [
      "曾子祐",
+     "AKP",
+     "111"
+    ],
+    [
+     "王博玄",
      "AKP",
      "107"
     ],
     [
-     "郭天信",
-     "AAA",
-     "104"
-    ],
-    [
-     "魔鷹",
-     "AKP",
-     "103"
+     "潘傑楷",
+     "ADD",
+     "105"
     ],
     [
      "張仁瑋",
      "ACN",
-     "100"
-    ],
-    [
-     "陳晨威",
-     "AJL",
-     "100"
+     "104"
     ]
    ],
    "盜壘": [
     [
      "張政禹",
      "AAA",
-     "28"
+     "29"
     ],
     [
      "陳晨威",
@@ -7545,8 +7602,8 @@
      "22"
     ],
     [
-     "郭天信",
-     "AAA",
+     "王博玄",
+     "AKP",
      "20"
     ],
     [
@@ -7555,9 +7612,9 @@
      "18"
     ],
     [
-     "王博玄",
-     "AKP",
-     "17"
+     "張仁瑋",
+     "ACN",
+     "14"
     ]
    ]
   },
@@ -7566,7 +7623,7 @@
     [
      "蔣銲",
      "AAA",
-     "1.35"
+     "1.43"
     ],
     [
      "布雷克",
@@ -7576,12 +7633,12 @@
     [
      "梅賽鍶",
      "AAA",
-     "1.79"
+     "1.76"
     ],
     [
-     "鈴木駿輔",
-     "AEO",
-     "2.22"
+     "黃子鵬",
+     "AKP",
+     "2.20"
     ],
     [
      "鋼龍",
@@ -7596,18 +7653,18 @@
      "10"
     ],
     [
-     "鈴木駿輔",
-     "AEO",
+     "羅戈",
+     "ACN",
+     "10"
+    ],
+    [
+     "蔣銲",
+     "AAA",
      "9"
     ],
     [
      "艾速特",
      "AKP",
-     "9"
-    ],
-    [
-     "羅戈",
-     "ACN",
      "9"
     ],
     [
@@ -7620,12 +7677,17 @@
     [
      "蔣銲",
      "AAA",
-     "117"
+     "125"
     ],
     [
      "勝騎士",
      "ACN",
-     "107"
+     "115"
+    ],
+    [
+     "艾速特",
+     "AKP",
+     "108"
     ],
     [
      "鋼龍",
@@ -7633,26 +7695,21 @@
      "106"
     ],
     [
-     "艾速特",
-     "AKP",
-     "106"
-    ],
-    [
-     "羅戈",
-     "ACN",
-     "94"
+     "艾菩樂",
+     "AJL",
+     "98"
     ]
    ],
    "救援成功": [
     [
      "鍾允華",
      "ADD",
-     "26"
+     "27"
     ],
     [
      "林凱威",
      "AAA",
-     "25"
+     "27"
     ],
     [
      "曾峻岳",
